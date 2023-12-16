@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\AdminProfile;
+use App\Models\ResidentProfile;
+use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -11,7 +14,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        Relation::morphMap([
+            'ResidentProfile' => ResidentProfile::class,
+            'AdminProfile' => AdminProfile::class
+        ]);
     }
 
     /**
