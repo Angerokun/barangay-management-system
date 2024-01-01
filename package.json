@@ -12,5 +12,10 @@
         "laravel-vite-plugin": "^0.8.0",
         "sass": "^1.56.1",
         "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "@scena/ruler": "^0.20.0",
+        "fabric": "^5.3.0",
+        "html2canvas": "^1.4.1"
     }
 }

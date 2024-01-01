@@ -444,5 +444,4 @@
 </div>
 <!-- END Page Content -->
 </div>
-<script src="{{ asset('js/dashmix.app.min.js') }}"></script>
 @endsection

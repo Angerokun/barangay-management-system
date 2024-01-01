@@ -15,6 +15,7 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <link rel="stylesheet" id="css-main" href="{{ asset('css/dashmix.css') }}">
 </head>
 <body>
     <div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
@@ -28,8 +29,9 @@
 
         @include('layouts.footer')
     </div>
+    @include('layouts.modal')
 </body>
-    <link rel="stylesheet" id="css-main" href="{{ asset('css/dashmix.css') }}">
+    <script src="{{ asset('js/dashmix.app.min.js') }}"></script>
 
     <!-- Page JS Plugins -->
     <script src="{{ asset('js/plugins/chart.js/chart.min.js') }}"></script>

@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="{{ asset('js/plugins/datatables-buttons-bs5/css/buttons.bootstrap5.min.css') }}">
 <link rel="stylesheet" href="{{ asset('js/plugins/datatables-responsive-bs5/css/responsive.bootstrap5.min.css') }}">
 <div class="py-5">
+<button type="button" class="btn btn-alt-primary push" data-bs-toggle="modal" data-bs-target="#modal-default-slideup">Default</button>
+
     <!-- Page Content -->
     <div class="content">
         <!-- Dynamic Table with Export Buttons -->
@@ -329,8 +331,6 @@
     </div>
     <!-- END Page Content -->
 </div>
-
-<script src="{{ asset('js/dashmix.app.min.js') }}"></script>
 
 <!-- jQuery (required for DataTables plugin) -->
 <script src="{{ asset('js/lib/jquery.min.js') }}"></script>
