@@ -508,7 +508,7 @@ Adding 'smini-visible-block' to an element will show it (display: block) only wh
         <div class="content-side">
         <ul class="nav-main">
             <li class="nav-main-item">
-            <a class="nav-main-link active" href="be_pages_dashboard.html">
+            <a class="nav-main-link active" href="{{ route('home') }}">
                 <i class="nav-main-link-icon fa fa-location-arrow"></i>
                 <span class="nav-main-link-name">Dashboard</span>
                 <span class="nav-main-link-badge badge rounded-pill bg-primary">8</span>
@@ -701,6 +701,20 @@ Adding 'smini-visible-block' to an element will show it (display: block) only wh
                 <li class="nav-main-item">
                 <a class="nav-main-link" href="be_forms_validation.html">
                     <span class="nav-main-link-name">Certification - Tax Exception</span>
+                </a>
+                </li>
+            </ul>
+            </li>
+            <li class="nav-main-heading">Settings</li>
+            <li class="nav-main-item">
+            <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
+                <i class="nav-main-link-icon fa fa-flask"></i>
+                <span class="nav-main-link-name">Forms Builder</span>
+            </a>
+            <ul class="nav-main-submenu">
+                <li class="nav-main-item">
+                <a class="nav-main-link" href="{{ route('forms.create') }}">
+                    <span class="nav-main-link-name">Generate</span>
                 </a>
                 </li>
             </ul>
