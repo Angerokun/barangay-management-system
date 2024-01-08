@@ -1,0 +1,8 @@
+#custom_search {
+    position: relative;
+    width: 39%;
+    display: flex;
+    float: right;
+    margin-top: 5px;
+    z-index: 1;
+}
