@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class ApplicationFormField extends Model
+class FieldValue extends Model
 {
     use HasFactory;
 
@@ -16,16 +16,15 @@ class ApplicationFormField extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'application_form_section_id',
         'field_id',
-        'is_active'
+        'value'
     ];
 
     /**
      * @return BelongsTo
      */
-    public function applicationFormSection(): BelongsTo
+    public function field(): BelongsTo
     {
-        return $this->belongsTo(ApplicationFormSection::class);
+        return $this->belongsTo(Field::class);
     }
 }

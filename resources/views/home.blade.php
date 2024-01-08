@@ -444,4 +444,9 @@
 </div>
 <!-- END Page Content -->
 </div>
+<!-- Page JS Plugins -->
+<script src="{{ asset('js/plugins/chart.js/chart.min.js') }}"></script>
+
+<!-- Page JS Code -->
+<script src="{{ asset('js/pages/be_pages_dashboard.min.js') }}"></script>
 @endsection

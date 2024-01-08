@@ -11,9 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('forms', function (Blueprint $table) {
+        Schema::create('field_values', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('field_id');
+            $table->string('value');
             $table->timestamps();
+
+            $table->foreign('field_id')->references('id')->on('fields');
         });
     }
 
@@ -22,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('forms');
+        Schema::dropIfExists('field_values');
     }
 };
